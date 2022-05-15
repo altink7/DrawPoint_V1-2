@@ -8,7 +8,7 @@ keine Unit-Tests
 
 -------------------
 Design: Altin
-Developer: ALtin
+Developer: Altin
 Start: 2022
 Finish (planned) :2023.05
 Progress: P>>c>>v<< >>
