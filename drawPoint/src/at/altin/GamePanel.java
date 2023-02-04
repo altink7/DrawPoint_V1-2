@@ -232,19 +232,19 @@ class GamePanel extends JPanel implements ActionListener {
         @Override
         public void keyPressed(KeyEvent e) {
             switch (e.getKeyCode()) {
-                case KeyEvent.VK_A:
+                case KeyEvent.VK_A, KeyEvent.VK_LEFT:
                     direction = 'L';
                     break;
 
-                case KeyEvent.VK_D:
+                case KeyEvent.VK_D, KeyEvent.VK_RIGHT:
                     direction = 'R';
                     break;
 
-                case KeyEvent.VK_W:
+                case KeyEvent.VK_W, KeyEvent.VK_UP:
                     direction = 'U';
                     break;
 
-                case KeyEvent.VK_S:
+                case KeyEvent.VK_S, KeyEvent.VK_DOWN:
                     direction = 'D';
                     break;
             }
@@ -256,31 +256,31 @@ class GamePanel extends JPanel implements ActionListener {
         @Override
         public void keyPressed(KeyEvent a) {
             switch (a.getKeyCode()) {
-                case KeyEvent.VK_NUMPAD1://Schwarz
+                case KeyEvent.VK_NUMPAD1, KeyEvent.VK_1://Schwarz
                     Farbe = 1;
                     break;
-                case KeyEvent.VK_NUMPAD2://Weiß
+                case KeyEvent.VK_NUMPAD2, KeyEvent.VK_2://Weiß
                     Farbe = 2;
                     break;
-                case KeyEvent.VK_NUMPAD3://Rot
+                case KeyEvent.VK_NUMPAD3, KeyEvent.VK_3://Rot
                     Farbe = 3;
                     break;
-                case KeyEvent.VK_NUMPAD4://Blau
+                case KeyEvent.VK_NUMPAD4, KeyEvent.VK_4://Blau
                     Farbe = 4;
                     break;
-                case KeyEvent.VK_NUMPAD5://Gelb
+                case KeyEvent.VK_NUMPAD5, KeyEvent.VK_5://Gelb
                     Farbe = 5;
                     break;
-                case KeyEvent.VK_NUMPAD0://Gruen
+                case KeyEvent.VK_NUMPAD0, KeyEvent.VK_0://Gruen
                     Farbe = 6;
                     break;
-                case KeyEvent.VK_NUMPAD7://Gruen
+                case KeyEvent.VK_NUMPAD7, KeyEvent.VK_7://Gruen
                     Farbe = 7;
                     break;
-                case KeyEvent.VK_NUMPAD8://Statistik anzeigen
+                case KeyEvent.VK_NUMPAD8, KeyEvent.VK_8://Statistik anzeigen
                     statistik = true;
                     break;
-                case KeyEvent.VK_NUMPAD9://Statistik verdecken
+                case KeyEvent.VK_NUMPAD9, KeyEvent.VK_9://Statistik verdecken
                     statistik = false;
                     break;
                 case KeyEvent.VK_SPACE://Spiel starten
